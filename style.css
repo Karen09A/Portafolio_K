@@ -212,6 +212,7 @@ h1 {
 
 .testimonios .carousel {
   max-width: 900px;
+  margin: 0 auto;
 }
 
 .carousel-item {
