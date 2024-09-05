@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Metadatos -->
+    <meta charset="utf-8">
+    <meta name="author" content="Karen Gonzalez">
+    <meta name="description" content="Portafolio de desarrollo web de Karen Gonzalez">
+    <meta name="keywords" content="HTML, CSS, JavaScript, React">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Titulo -->
+    <title>Karen Gonzalez | Desarrollo Web Front-End</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="imagenes/icono.png">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- Iconos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- CSS -->
+    <link href="style.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <!-- Barra de navegacion -->
+    <nav class="navbar navbar-expand-md navbar-light">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-toggler">
+          <a class="navbar-brand" href="#">
+            <img src="imagenes/icono.png" width="50" alt="Logo de la página web">
+          </a>
+          <ul class="navbar-nav d-flex justify-content-center align-items-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#sobre-mi"><b>Sobre mí</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#proyectos"><b>Proyectos</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonios"><b>Testimonios</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto"><b>Contacto</b></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Seccion Hero -->
+    <section class="hero align-items-stretch">
+      <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
+        <img class="hero-imagen-desarrollador rounded-circle" src="imagenes/fotoMia.jpeg" alt="Foto">
+        <h1>Hola, soy Karen Gonzalez</h1>
+        <!--Animación con JavaScript-->
+        <h2 class="text-primary mb-4" id="typewriter"></h2>
+      </div>
+      <div class="hero-inferior">
+        <img class="hero-inferior-imagen img-fluid" src="imagenes/escritorio.png" alt="Monitor, laptop y logos de HTML, CSS, JavaScript y mas.">
+      </div>
+    </section>
+
+    <!-- Sobre mi -->
+    <section id="sobre-mi" class="sobre-mi seccion-oscura">
+      <div class="contenedor">
+        <h2 class="seccion-titulo">Conoce a Karen Gonzalez</h2>
+        <p class="seccion-texto">Soy próxima egresada de Ingeniería en Ciencias de la Computación, con un enfoque en el desarrollo web. Me dedico a practicar y mejorar continuamente a través de proyectos, además de participar activamente en asesorías e investigaciones para fortalecer mis habilidades en el campo.</p>
+      </div>
+    </section>
+
+    <!-- Experiencia -->
+    <section class="experiencia seccion-clara">
+      <div class="container text-center">
+        <div class="row">
+          <!-- Desarrollo Web -->
+          <div class="columna col-12 col-md-4">
+            <i class="bi bi-laptop"></i> 
+            <p class="experiencia-titulo">Desarrollo Web</p>
+            <p>Creación de proyectos de desarrollo web jr y mejorandolos conforme adquiero mas conocimiento. </p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-primary">HTML</span>
+              <span class="badge text-bg-primary">CSS</span>
+              <span class="badge text-bg-primary">JavaScript</span>
+              <span class="badge text-bg-primary">PHP</span>
+            </div>
+          </div>
+          <!-- Articulos -->
+          <div class="columna col-12 col-md-4">
+            <i class="bi bi-laptop"></i>
+            <p class="experiencia-titulo">Artículos</p>
+            <p> Libro <em>APORTACIONES DE LAS CIENCIAS COMPUTACIONALES EN SISTEMAS INTELIGENTES Y CIBERSEGURIDAD </em><small><b>ISBN </b>978-607-8857-29-6</small>  Co-autora del articulo Hacking Ético en Tiempos de Covid del año 2022.</p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-primary">Escribir</span>
+              <span class="badge text-bg-primary">Editar</span>
+            </div>
+          </div>
+          <!-- Estudiante -->
+          <div class="columna col-12 col-md-4">
+            <i class="bi bi-laptop"></i>
+            <p class="experiencia-titulo">Estudiante</p>
+            <p>Soy proxima egresada de la carrera de Ingeniería en Ciencias de la Computación, buscando oportunidades en el área de desarrollo web. </p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-primary">Tecnolochicas PRO</span>
+              <span class="badge text-bg-primary">Desarrollo Web</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="proyectos" class="proyectos-recientes seccion-clara d-flex flex-column">
+      <h2 class="seccion-titulo texto-negro">Mis proyectos recientes</h2>
+      <h3 class="seccion-descripcion">Estos son algunos proyectos que he creado recientemente...</h3>
+      <!-- Galeria de Proyectos -->
+      <div class="container text-center proyectos-contenedor">
+        <div class="row">
+          <!-- Proyecto 1 -->
+          <div class="col-12 col-md-6 col-lg-6">
+            <div class="proyecto">
+              <img src="imagenes/proyecto1.png" alt="Proyecto 1">
+              <div class="overlay">
+                <p>Proyecto 1</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/Karen09A/Clon_G" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="https://karen09a.github.io/Clon_G/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 2 -->
+          <div class="col-12 col-md-6 col-lg-6">
+            <div class="proyecto">
+              <img src="imagenes/proyecto2.png" alt="Proyecto 2">
+              <div class="overlay">
+                <p>Proyecto 2</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/Karen09A/Pag_Autos" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="https://karen09a.github.io/Pag_Autos/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 3 -->
+          <div class="col-12 col-md-6 col-lg-6">
+            <div class="proyecto">
+              <img src="imagenes/proyecto3.png" alt="Proyecto 3">
+              <div class="overlay">
+                <p>Proyecto 3</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/Karen09A/Juego_Snake" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="https://karen09a.github.io/Juego_Snake/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 4 -->
+          <div class="col-12 col-md-6 col-lg-6">
+            <div class="proyecto">
+              <img src="imagenes/proyecto4.png" alt="Proyecto 4">
+              <div class="overlay">
+                <p>Proyecto 4</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/Karen09A/Calculadora" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="https://karen09a.github.io/Calculadora/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <!--Cambiar el git-->
+      <a href="https://github.com/Karen09A" target="_blank" rel="noopener noreferrer">
+        <button type="button" class="btn btn-info">
+          <b>Ver más proyectos</b>
+          <i class="bi bi-arrow-right-circle-fill"></i>
+        </button>
+      </a>
+    </section>
+
+    <!-- Testimonios -->
+    <section id="testimonios" class="testimonios seccion-clara">
+      <h2 class="seccion-titulo">Testimonios</h2>
+      <h3 class="seccion-descripcion">Estos son algunos testimonios...</h3>
+      
+      <!-- Carrusel -->
+      <div id="testimonios-carrusel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <img class="testimonio-imagen rounded-circle" src="imagenes/Atenas_Franco.jpg" alt="Foto de Atenas_Franco">
+              <p class="testimonio-texto">Karen ha demostrado ser una estudiante excepcional, destacándose por su compromiso y actitud positiva hacia el aprendizaje.Su rendimiento académico es consistente, la capacidad para trabajar en equipo y apoyar a sus compañeros es admirable.Siempre está dispuesta a enfrentar nuevos desafíos con entusiasmo, lo que la convierte en un ejemplo a seguir para sus compañeros.</p>
+              <div class="testimonio-info">
+                <p class="cliente">Jennifer Atenas Franco</p>
+                <p class="cargo">Ingeniera en computación| Mentora de desarrollo web</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <img class="testimonio-imagen rounded-circle" src="imagenes/Marissa_Hazel.jpg" alt="Foto de Marissa_Hazel">
+              <p class="testimonio-texto">Karen destaca por su constante búsqueda de superación y formación, siempre está dispuesta a aprender nuevas habilidades y mejorar sus conocimientos para aplicarlos en su trabajo diario. Su compromiso con la excelencia es evidente en cada proyecto en el que participa.</p>
+              <div class="testimonio-info">
+                <p class="cliente">Marissa Hazel Bonilla</p>
+                <p class="cargo">Asistente de investigación del Área de Estudios Urbanos | UAM</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <img class="testimonio-imagen rounded-circle" src="imagenes/Margarita_Estrada.jpg" alt="Foto de Margarita Estrada">
+              <p class="testimonio-texto">Karen ha sobresalido en su capacidad para abordar problemas de manera innovadora y eficiente es realmente admirable,  demostrando no solo sus habilidades técnicas, sino también su capacidad para trabajar en equipo y liderar a sus compañeros hacia el éxito.
+                Se distingue por su ética de trabajo y su actitud proactiva, siempre está dispuesta a asumir nuevos desafíos y busca continuamente oportunidades para aprender y crecer.</p>
+              <div class="testimonio-info">
+                <p class="cliente">Margarita Estrada Rodriguez</p>
+                <p class="cargo">Embajadora | Chicas en tecnología</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="contacto seccion-oscura">
+      <div class="container">
+        <div class="container text-center rectangulo d-flex justify-content-evenly">
+          <div class="row">
+            <div class="col-12 col-md-4 seccion-titulo">
+              ¡Hablemos!
+            </div>
+            <div class="col-12 col-md-4 descripcion">
+              Contáctame para iniciar un proyecto de desarrollo web y haré que tu visión se vuelva realidad.
+            </div>
+            <div class="col-12 col-md-4">
+              <a href="mailto:aisgl2309@gmail.com">
+                <button type="button">  
+                  Contacto
+                  <i class="bi bi-envelope-check-fill"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Pie de pagina (footer) -->
+    <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center"> 
+      <img class="footer-logo" src="imagenes/icono.png" alt="Logo del portafolio">
+      <p class="footer-texto text-center"><b>Aprendo y creo todos los días.<br>Creemos un proyecto juntos.</b></p>
+      <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+        <a href="https://www.facebook.com/share/s45FmCrDtqUbXeDt/?mibextid=qi2Omg" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-facebook"></i>
+        </a>
+        <a href="https://github.com/Karen09A" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/karen-glez-lopez" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-linkedin"></i>
+        </a>
+        <a href="https://www.instagram.com/ash.glopez?igsh=eW1jamFpYjBhcmd2" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a href="mailto:aisgl2309@gmail.com" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-envelope"></i>
+        </a>
+      </div>
+      <div class="derechos-de-autor">Creado por Karen Gonzalez (2024) &#169;</div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+        <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+        <script src="main.js"></script>
+
+  </body>
+</html>
