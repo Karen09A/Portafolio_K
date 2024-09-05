@@ -373,8 +373,18 @@ footer {
   .overlay i {
     font-size: 40px;
   }
+
+  .testimonio-imagen {
+    height: 90px;
+    width: 90px;
+  }
+
+  .testimonio-texto {
+    font-size: 16px;
+  }
 }
 
+/* Ajustes para pantallas medianas (máximo 768px) */
 @media screen and (max-width: 767px) {
   .navbar-brand {
     display: none;
@@ -400,6 +410,7 @@ footer {
   }
 }
 
+/* Ajustes para pantallas de hasta 800px */
 @media screen and (max-width: 800px) {
   .testimonio-imagen {
     height: 120px;
@@ -411,8 +422,13 @@ footer {
   }
 }
 
+/* Ajustes para pantallas más grandes (mínimo 700px) */
 @media screen and (min-width: 700px) {
   .hero-inferior-imagen {
     max-width: 600px;
+  }
+
+  .testimonio-texto {
+    font-size: 20px;
   }
 }
